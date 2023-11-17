@@ -1,28 +1,30 @@
-# Descrizione dello script di download immagini
+# Description of the image download script
 
-Lo script script.py è progettato per scaricare immagini da un file di testo contenente gli URL delle immagini.
+The script.py script is designed to download images from a text file containing image URLs.
 
-# Funzione download_images_from_file
+# Download_images_from_file function
 
-La funzione download_images_from_file prende in input il percorso del file contenente gli URL delle immagini.
+The download_images_from_file function takes as input the path to the file containing the image URLs.
 
-1. Apre il file e legge gli URL delle immagini.
-2. Per ogni URL, effettua le seguenti operazioni:
-- Rimuove spazi e caratteri di nuova riga dall'URL.
-- Effettua una richiesta GET all'URL per ottenere la risposta.
-- Se la risposta ha uno status code 200 (OK), procede con il download dell'immagine.
-- Estrae l'anno dalla struttura dell'URL e crea una struttura di cartelle corrispondente.
-- Salva l'immagine con il nome preso dall'URL nella cartella corrispondente.
-- Stampa un messaggio di successo.
-- Se non è possibile trovare l'anno nell'URL, stampa un messaggio di errore.
-- Se la richiesta ha uno status code diverso da 200, stampa un messaggio di errore.
-- Se si verifica un'eccezione durante il download dell'immagine, stampa un messaggio di errore.
-Utilizzo dello script
+1. Opens the file and reads the image URLs.
+2. For each URL, do the following:
+- Remove spaces and newlines from the URL.
+- Make a GET request to the URL to get the response.
+- If the response has a status code of 200 (OK), proceed with the image download.
+- Extracts the year from the URL structure and creates a corresponding folder structure.
+- Save the image with the name taken from the URL in the corresponding folder.
+- Print a success message.
+- If the year cannot be found in the URL, print an error message.
+- If the request has a status code other than 200, print an error message.
+- If an exception occurs while downloading the image, print an error message.
+Using the script
 
-Per utilizzare lo script, è necessario specificare il percorso del file contenente gli URL delle immagini. In questo caso, il percorso del file è "url.txt".
+To use the script, you need to specify the path to the file containing the image URLs. In this case, the file path is "url.txt".
 
-Esempio di utilizzo:
-`file_path = "url.txt"
-download_images_from_file(file_path)`
+To run the script, simply type
 
-Lo script scaricherà le immagini dagli URL specificati nel file e le salverà nella struttura di cartelle corrispondente.
+`python3 script.py`
+
+in a terminal window opened inside the directory of the script.
+
+The script will download images from the URLs specified in the file and save them in the corresponding folder structure.
