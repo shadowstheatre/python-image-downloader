@@ -22,7 +22,7 @@ Utilizzo dello script
 Per utilizzare lo script, è necessario specificare il percorso del file contenente gli URL delle immagini. In questo caso, il percorso del file è "url.txt".
 
 Esempio di utilizzo:
-file_path = "url.txt"
-download_images_from_file(file_path)
+`file_path = "url.txt"
+download_images_from_file(file_path)`
 
 Lo script scaricherà le immagini dagli URL specificati nel file e le salverà nella struttura di cartelle corrispondente.
